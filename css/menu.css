@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: black;
+}
+
+.logo-link {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.logo-img {
+    margin-left: 5px;
+    height: 40px;
+}
+
+.container-nav-list {
+    display: inherit;
+    justify-content: inherit;
+}
+
+.nav-list {
+    display: inherit;
+    justify-self: end;
+    justify-content: end;
+    justify-items: end;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav-list li {
+    padding: 0 10px;
+    color: white;
+    font-family: "Playwrite Colombia Guides", sans-serif    ;
+    font-weight: 600;
+    font-size: 14pt;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-list li a:hover {
+    text-decoration: underline;
+    color: #17baaa;
+    transition: all .25s ease;
+}
+
+.nav-list li:last-of-type a {
+    display: flex;
+    align-items: center;
+    background-color: #dd3d53;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.heart-icon {
+    margin-right: 5px;
+}
+
+.nav-list li:last-of-type a:hover {
+    background-color: #c9233a;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list li:last-of-type a svg {
+    /* height: 40px; */
+    width: 1em;
+}
