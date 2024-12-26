@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+.container {
+    display: flex;
+    font-size: 14pt;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.logo-img {
+    height: 40px;
+}
+
+.nav-list-container {
+    /* display: flex;
+    justify-content: end; */
+    width: 100%;
+    margin-right: 40px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-list-link {
+    position: relative;
+}
+
+.nav-list li {
+    margin: 0 10px;
+}
+
+.nav-list-link::after {
+    content: "";
+    background: #17baaa;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    /* transform: scaleX(0);   */
+    transition: all .25s ease;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: inherit;
+    transition: all .25s ease;
+}
+
+.nav-list li:last-of-type a {
+    height: 30px;
+    background-color: #dd3d53;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-list li:last-of-type a:hover {
+    background-color: #c9233a;
+}
+
+.heart-icon {
+    width: 1em;
+    margin-right: 5px;
+}
