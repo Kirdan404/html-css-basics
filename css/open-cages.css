@@ -5,38 +5,40 @@ body {
 
 .container {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-size: 14pt;
     font-weight: 600;
     background-color: black;
     color: white;
+    padding: 0 40px  ;
 }
 
 .logo-container {
     display: flex;
     align-items: center;
-    margin-left: 40px;
 }
 
 .logo-img {
     height: 40px;
 }
 
-.nav-list-container {
-    /* display: flex;
-    justify-content: end; */
-    width: 100%;
-    margin-right: 40px;
-}
+/* .nav-list-container {
+
+} */
 
 .nav-list {
     display: flex;
-    justify-content: end;
+    /* justify-content: space-between; */
     align-items: center;
     list-style-type: none;
 }
 
 .nav-list-link {
     position: relative;
+    text-decoration: none;
+    color: inherit;
+    transition: all .5s ease;
 }
 
 .nav-list li {
@@ -51,14 +53,16 @@ body {
     position: absolute;
     bottom: -8px;
     left: 0;
-    /* transform: scaleX(0);   */
-    transition: all .25s ease;
+    transform: scaleX(0);  
+    transition: all .5s ease;
 }
 
-.nav-list a {
-    text-decoration: none;
-    color: inherit;
-    transition: all .25s ease;
+.nav-list-link:hover {
+    color: #17baaa;
+}
+
+.nav-list-link:hover::after {
+    transform: scaleX(1);
 }
 
 .nav-list li:last-of-type a {
@@ -73,6 +77,11 @@ body {
 
 .nav-list li:last-of-type a:hover {
     background-color: #c9233a;
+    color: inherit;
+}
+
+.nav-list li:last-of-type a:hover::after {
+    transform: scaleX(0);
 }
 
 .heart-icon {
