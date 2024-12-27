@@ -4,14 +4,36 @@ body {
 }
 
 .container {
+    height: 100vh;
+    padding: 0 40px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    background-image: url(https://opencages.org/_nuxt/img/homepage.0151b74.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    color: white;
+}
+
+.container::after {
+    content: "";
+    background-color: #0c3632;
+    position: absolute;
+    opacity: .85;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all .25s ease;
+}
+
+.nav {
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 14pt;
-    font-weight: 600;
-    background-color: black;
-    color: white;
-    padding: 0 40px  ;
+    padding-top: 20px;
 }
 
 .logo-container {
@@ -67,9 +89,11 @@ body {
 
 .nav-list li:last-of-type a {
     height: 30px;
+    box-sizing: border-box;
+    font-size: 0.75rem;
     background-color: #dd3d53;
-    padding: 5px;
-    border-radius: 10px;
+    padding: 0 10px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
 }
