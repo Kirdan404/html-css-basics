@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform property</title>
+</head>
+<body>
+    <div class="test-transform test-rotate">
+        <h2>Rotate</h2>
+    </div>
+    <div class="test-transform test-scale">
+        <h2>Scale</h2>
+    </div>
+    <div class="test-transform test-translate">
+        <h2>Translate</h2>
+    </div>
+    <div class="test-transform test-skew">
+        <h2>Skew</h2>
+    </div>
+
+    <style>
+        .test-transform {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 150px;
+            margin-top: 50px;
+            margin-left: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: all 1s ease;
+        }
+
+        .test-rotate {
+            background-color: aquamarine;
+        }
+
+        .test-rotate:hover {
+            transform: rotate(90deg);
+        }
+
+        .test-scale {
+            background-color: slategray;
+        }
+
+        .test-scale:hover {
+            transform: scale(0.5);
+        }
+
+        .test-translate {
+            background-color: tomato;
+        }
+
+        .test-translate:hover {
+            transform: translate(100px, 0);
+        }
+
+        .test-skew {
+            background-color: violet;
+        }
+
+        .test-skew:hover {
+            transform: skew(60deg);
+        }
+    </style>
+</body>
+</html>
