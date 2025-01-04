@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.container {
+    height: 100vh;
+    background-image: url(https://opencages.org/_nuxt/img/homepage.0151b74.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: .875rem;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.container::after {
+    background: #0c3632;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: .85;
+    position: absolute;
+    top: 0;
+    transition: all .25s ease;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    /* padding: 0 40px; */
+}
+
+.logo-img {
+    height: 40px;
+}
+
+.list-container {
+    display: flex;
+    align-items: center ;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    list-style-type: none;
+}
+
+.nav-list li {
+    padding: 0 10px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: inherit;
+    transition: all .25s ease;
+}
+
+.nav-list-link::after {
+    background: #17baaa;
+    bottom: -8px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transition: all .25s ease;
+    width: 100%;
+}
+
+.nav-list-link:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-list li:last-of-type {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    /* padding: 5px; */
+}
+
+.nav-list li:last-of-type a {
+    height: 30px;
+    padding: 5px;
+    background-color: #dd3d53;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.nav-list li:last-of-type a:hover {
+    background-color: #c9233a;
+}
+
+.heart-icon {
+    width: 1em;
+    padding-right: 5px;
+}

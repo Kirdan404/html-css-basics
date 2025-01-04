@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+.parent {
+    height: 100vh;
+    background-color: blue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal {
+    height: 100px;
+    width: 100%;
+    background-color: yellow;
+    position: absolute;
+    align-content: center;
+}
+
+.vertical {
+    height: 100%;
+    width: 100px;
+    background-color: yellow;
+    position: absolute;
+    /* left: 50%; */
+}
