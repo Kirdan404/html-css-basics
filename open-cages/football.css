@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    color: #ffffff;
+    height: 100vh;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/42/Football_in_Bloomington%2C_Indiana%2C_1995.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-list {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-list li {
+    padding: 10px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.nav-list a::before {
+    content: attr(content);
+    position: absolute;
+    overflow: hidden;
+    border-right: 10px solid forestgreen;
+    width: 1%;
+}

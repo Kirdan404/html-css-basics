@@ -16,7 +16,6 @@ body {
     width: 100%;
     background-color: yellow;
     position: absolute;
-    align-content: center;
 }
 
 .vertical {
@@ -24,5 +23,4 @@ body {
     width: 100px;
     background-color: yellow;
     position: absolute;
-    /* left: 50%; */
 }

@@ -1,19 +1,17 @@
 body {
     margin: 0;
+    color: #ffffff;
+    font-family: "Raleway", "Helvetica", "Arial", sans-serif;
     font-size: 1rem;
+    line-height: 1.5;
 }
 
 .container {
-    height: 100vh;
-    background-image: url(https://opencages.org/_nuxt/img/homepage.0151b74.jpg.webp);
+    background-image: url("https://opencages.org/_nuxt/img/homepage.0151b74.jpg.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
-    color: #ffffff;
-    font-family: 'Raleway', sans-serif;
-    font-size: .875rem;
-    font-weight: 600;
-    padding: 20px;
+    height: 100vh;
 }
 
 .container::after {
@@ -28,38 +26,61 @@ body {
     width: 100%;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
+.header-container {
     position: relative;
     z-index: 1;
-    /* padding: 0 40px; */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
 }
 
 .logo-img {
     height: 40px;
+    width: auto;
 }
 
 .list-container {
     display: flex;
-    align-items: center ;
+    align-items: center;
 }
 
 .nav-list {
-    display: flex;
-    align-items: center;
     margin: 0;
     list-style-type: none;
+    display: flex;
 }
 
 .nav-list li {
     padding: 0 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
 .nav-list a {
     text-decoration: none;
     color: inherit;
+    font-size: .875rem;
+    font-weight: 600;
     transition: all .25s ease;
+}
+
+.nav-list-link:hover {
+    color: #17baaa;
 }
 
 .nav-list-link::after {
@@ -78,19 +99,16 @@ body {
     transform: scaleX(1);
 }
 
-.nav-list li:last-of-type {
+.nav-list li:last-of-type a {
+    background-color: #dd3d53;
+    height: 30px;
+    padding: 0 10px;
     display: flex;
     align-items: center;
-    justify-items: center;
-    /* padding: 5px; */
-}
-
-.nav-list li:last-of-type a {
-    height: 30px;
-    padding: 5px;
-    background-color: #dd3d53;
-    box-sizing: border-box;
     border-radius: 3px;
+    font-size: .75rem;
+    font-weight: 700;
+    box-sizing: border-box;
 }
 
 .nav-list li:last-of-type a:hover {
@@ -99,5 +117,48 @@ body {
 
 .heart-icon {
     width: 1em;
-    padding-right: 5px;
+    padding-right: 10px;
+}
+
+.main-container {
+    position: relative;
+    z-index: 1;
+    margin: 0 15%;
+    margin-top: 5%;
+}
+
+.info-h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.green-span {
+    color: #17baaa;
+}
+
+.how-button-container {
+    align-items: center;
+    border: 0;
+    box-sizing: border-box;
+    display: inline-flex;
+    font-size: .875rem;
+    font-weight: 700;
+    justify-content: center;
+    padding: 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .25s ease;
+    background-color: #17baaa;
+    min-height: 40px;
+}
+
+.how-link {
+ color: inherit;
+ text-decoration: none;
+}
+
+@media screen and (max-width: 960px) {
+    .nav-list-link {
+        color: green;
+    }
 }
