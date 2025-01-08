@@ -157,8 +157,26 @@ body {
  text-decoration: none;
 }
 
-@media screen and (max-width: 960px) {
-    .nav-list-link {
-        color: green;
+.nav-toggle {
+    font-size: 2rem;
+    color: #fff;
+    display: none;
+}
+
+.burger-icon {
+    display: inline-block;
+    font-size: inherit;
+    height: 1rem;
+    vertical-align: -0.125em;
+    cursor: pointer;
+}
+
+@media  screen and (max-width: 992px ) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
     }
 }

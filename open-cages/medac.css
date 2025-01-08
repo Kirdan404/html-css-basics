@@ -103,3 +103,24 @@
         display: none;
     }
 }
+
+@media screen  and (max-width: 1300px) {
+    .link-nav-list {
+        color: red;
+    }
+}
+@media screen  and (max-width: 1200px) {
+    .link-nav-list {
+        color: yellow;
+    }
+}
+@media screen  and (max-width: 1100px) {
+    .link-nav-list {
+        color: green;
+    }
+}
+@media screen  and (max-width: 1000px) {
+    .link-nav-list {
+        color: darkgreen;
+    }
+}
