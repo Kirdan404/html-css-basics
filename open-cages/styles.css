@@ -12,6 +12,8 @@ body {
     background-size: cover;
     background-position: 50%;
     height: 100vh;
+    padding: 20px;
+    margin: auto;   
 }
 
 .container::after {
@@ -34,17 +36,17 @@ body {
 .nav {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
-    margin: auto;
 }
 
 .logo-container {
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
+    line-height: 1.5;
 }
 
 .logo-link {
     display: flex;
+    height: 100%;
     align-items: center;
 }
 
@@ -117,6 +119,7 @@ body {
 
 .heart-icon {
     width: 1em;
+    font-size: .875rem ;
     padding-right: 10px;
 }
 

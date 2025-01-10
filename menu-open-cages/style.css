@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    line-height: 1.5;
+    font-family: "Raleway", "Helvetica", "Arial", sans-serif;
+}
+
+.container-header {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    color: white;
+    height: 100vh;
+    background-image: url("https://opencages.org/_nuxt/img/homepage.0151b74.jpg.webp");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: 50%;
+}
+
+.container-header::after {
+    content: "";
+    background: #0c3632;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .85;
+    /* transition: all .25s ease;    */
+}
+
+.container {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* box-sizing: border-box; */
+}
+
+.logo-img {
+    height: 40px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+}
+
+.nav-list li {
+    padding: 0 10px;
+}
+
+.nav-list a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-list-link {
+    position: relative;
+    transition: all .25s ease;
+}
+
+.nav-list-link:hover {
+    color: #17baaa;
+}
+
+.nav-list-link::after {
+    background: #17baaa;
+    bottom: -8px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transition: all .25s ease;
+    width: 100%;
+}
+
+.nav-list-link:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-list li:last-of-type a {
+    display: inline-flex;
+    align-items: center;
+    height: 30px;
+    background-color: #dd3d53;
+    border-radius: 3px;
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: 700;
+    transition: all .25s ease;
+}
+
+.nav-list li:last-of-type a:hover {
+    background-color: #c9233a;
+}
+
+.heart-img {
+    width: 1em;
+    margin-right: 10px;
+    font-size: .875rem;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    margin: auto 0;
+}
+
+.header-content-title {
+    font-size: 56px;
+    line-height: 84px;
+}
+
+.header-content-title-green {
+    color: #17baaa;
+}
